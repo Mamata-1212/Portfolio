@@ -1,0 +1,171 @@
+import Reveal from '@/components/Atoms/Reveal';
+import TextComponent from '@/components/Atoms/TextComponent';
+import { motion } from 'framer-motion';
+
+const projects = [
+  {
+    title: 'Prepaid Card Platform',
+    problem:
+      'Users, admins, distributors, and corporate partners needed a unified and secure platform to manage prepaid cards, KYC, transactions, funding, and operational workflows across multiple roles.',
+    solution:
+      'Led development of a full-scale multi-role platform with complete card lifecycle management (issuance, activation, PIN controls, limits), advanced KYC/KYB verification, transaction history with filters, prefunding workflows, ledger views, and real-time balance sync. Built reusable UI systems and dashboards supporting customers, retailers, distributors, and partners.',
+    impact:
+      'Significantly reduced manual operations across departments, improved onboarding speed, and created a scalable fintech infrastructure serving thousands of active users with fast performance and high reliability.',
+    additional:
+      'Designed multi-theme + multi-layout architecture, built reusable components for tables/forms/filters, implemented RBAC, ticketing, logs, inventory tracking, commission system, and reporting dashboards.',
+    tech: 'React Native, React, TypeScript, Redux, Tailwind, Mantine, i18n',
+  },
+
+  {
+    title: 'Enterprise Multi-Tenant Portal',
+    problem:
+      'Retailers, distributors, partners, and corporate teams needed a customizable enterprise portal to manage commissions, reports, inventory, financial data, and user hierarchies.',
+    solution:
+      'Architected a large-scale multi-tenant portal supporting multiple layouts, themes, and brand identities. Built modules for commission slabs, payouts, KYB/KYC flows, user roles, inventory movement, ticketing, prefunding, and complex reporting. Implemented RBAC and config-driven UI for maximum scalability.',
+    impact:
+      'Standardized the product UI/UX across all business units, reduced onboarding time for new partners, and enabled white-label portal deployment with minimal customization.',
+    additional:
+      'Created reusable dashboards, multi-role login flows, unified navigation, extensive filtering, exporting (CSV/PDF), and seamless data visualization.',
+    tech: 'React, TS, Tailwind, Mantine, MUI, Redux',
+  },
+
+  {
+    title: 'TastePass – Wine Scanning & NFT Ownership',
+    problem:
+      'Wine estates and users needed a modern way to authenticate wine bottles, track provenance, and verify ownership through NFT-linked metadata.',
+    solution:
+      'Developed cross-platform mobile apps enabling wine scanning through OCR, QR, and label detection. Built complete NFT minting workflows, estate dashboards, multilingual UI, authentication, and detailed asset management screens.',
+    impact:
+      'Streamlined bottle verification for estates, reduced manual checks, and introduced digital ownership using Web3 technology across multiple regions and user types.',
+    additional:
+      'Implemented scanning SDKs, multilingual support (i18n), secure API integration, and highly responsive UI optimized for low-end devices.',
+    tech: 'React Native, React, TypeScript, Tailwind, i18n',
+  },
+
+  {
+    title: 'MegaVrse – AI Media Platform',
+    problem:
+      'Users required an intuitive UI to interact with heavy AI workflows like text-to-video, voice cloning, text-to-voice, and 3D model generation.',
+    solution:
+      'Developed responsive, modular interfaces for AI generation pipelines including media previews, task queues, history, cloning panels, prompt builders, and multi-step workflows. Integrated SuperTokens for secure auth and built reusable UI components for fast interactions.',
+    impact:
+      'Improved efficiency of media creation workflows, enhanced user stability for long-running tasks, and enabled seamless multi-format AI content generation.',
+    additional:
+      'Optimized rendering, integrated load states, handled large media results, and built scalable folder-based monorepo UI architecture.',
+    tech: 'React, TypeScript, Tailwind, MonoRepo, SuperTokens',
+  },
+];
+
+const Projects = () => {
+  return (
+    <section id="projects" className="mx-auto max-w-7xl px-6 py-24">
+      <Reveal>
+        <TextComponent
+          fontSize={32}
+          fontWeight={700}
+          color="black"
+          align="center"
+          className="font-bold transition-all hover:text-blue-600"
+        >
+          Projects
+        </TextComponent>
+      </Reveal>
+
+      <div className="mt-16 grid gap-10 md:grid-cols-2">
+        {projects.map((project, index) => (
+          <Reveal delay={index * 0.12} key={project.title}>
+            <motion.div
+              whileHover={{ scale: 1.03 }}
+              transition={{ type: 'spring', stiffness: 150 }}
+              className="rounded-2xl border bg-white/70 p-8 shadow-lg backdrop-blur-xl"
+            >
+              <TextComponent
+                fontSize={22}
+                fontWeight={700}
+                color="blue"
+                className="
+    bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent
+    transition-all hover:from-blue-700
+    hover:to-purple-700
+  "
+              >
+                {project.title}
+              </TextComponent>
+
+              <div className="mt-4">
+                <TextComponent fontSize={18} fontWeight={600} color="#1f2937">
+                  Problem
+                </TextComponent>
+
+                <TextComponent
+                  fontSize={16}
+                  fontWeight={400}
+                  color="#4b5563"
+                  className="mt-1"
+                >
+                  {project.problem}
+                </TextComponent>
+              </div>
+
+              <div className="mt-4">
+                <TextComponent fontSize={18} fontWeight={600} color="#1f2937">
+                  Solution
+                </TextComponent>
+
+                <TextComponent
+                  fontSize={16}
+                  fontWeight={400}
+                  color="#4b5563"
+                  className="mt-1"
+                >
+                  {project.solution}
+                </TextComponent>
+              </div>
+
+              <div className="mt-4">
+                <TextComponent fontSize={18} fontWeight={600} color="#1f2937">
+                  Impact
+                </TextComponent>
+
+                <TextComponent
+                  fontSize={16}
+                  fontWeight={400}
+                  color="#4b5563"
+                  className="mt-1"
+                >
+                  {project.impact}
+                </TextComponent>
+              </div>
+
+              <div className="mt-4">
+                <TextComponent fontSize={18} fontWeight={600} color="#1f2937">
+                  Additional
+                </TextComponent>
+
+                <TextComponent
+                  fontSize={16}
+                  fontWeight={400}
+                  color="#4b5563"
+                  className="mt-1"
+                >
+                  {project.additional}
+                </TextComponent>
+              </div>
+
+              <TextComponent
+                fontSize={14}
+                fontWeight={500}
+                color="#9333ea"
+                className="mt-6"
+              >
+                Tech: {project.tech}
+              </TextComponent>
+            </motion.div>
+          </Reveal>
+        ))}
+      </div>
+    </section>
+  );
+};
+
+export default Projects;
