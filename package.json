@@ -4,17 +4,15 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build && npm run copy-webxml",
-"copy-webxml": "powershell -Command \"New-Item -Item",
-
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 1",
-    "preview": "vite preview",
-    "prepare": "husky",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
-    "lint-staged": "lint-staged",
-    "precommit": "npm run lint-staged"
-  },
+  "dev": "vite",
+  "build": "tsc -b && vite build",
+  "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 1",
+  "preview": "vite preview",
+  "prepare": "husky",
+  "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
+  "lint-staged": "lint-staged",
+  "precommit": "npm run lint-staged"
+},
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@mantine/carousel": "^7.17.0",
