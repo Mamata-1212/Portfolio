@@ -72,7 +72,11 @@ const Hero = () => {
           View Projects
         </Button>
 
-        <Button href="/Mamata_Gawand_Resume.pdf" download variant="outline">
+        <Button
+          href="/src/assets/Mamata_Gawand_Resume.pdf"
+          download
+          variant="outline"
+        >
           Resume
         </Button>
       </motion.div>

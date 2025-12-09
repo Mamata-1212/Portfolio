@@ -40,6 +40,7 @@ const projects = [
     additional:
       'Implemented scanning SDKs, multilingual support (i18n), secure API integration, and highly responsive UI optimized for low-end devices.',
     tech: 'React Native, React, TypeScript, Tailwind, i18n',
+    links: [{ label: 'Doc', url: 'https://rejolut.com/design/tastepass/' }],
   },
 
   {
@@ -53,6 +54,49 @@ const projects = [
     additional:
       'Optimized rendering, integrated load states, handled large media results, and built scalable folder-based monorepo UI architecture.',
     tech: 'React, TypeScript, Tailwind, MonoRepo, SuperTokens',
+  },
+  {
+    title: 'MO – Project Management Platform',
+    problem:
+      'Purchasers and providers needed a platform to manage projects, milestones, funds, penalties, and workflows.',
+    solution:
+      'Built a project creation system, milestone tracking, fund management engine, penalty workflows, and detailed sub-milestone features.',
+    impact:
+      'Streamlined collaboration, improved transparency, and enabled real-time project monitoring.',
+    tech: 'React, Tailwind CSS',
+    links: [{ label: 'Web', url: 'https://app.the-mo.net/signin' }],
+  },
+  {
+    title: '5WF – Wildlife Conservation Platform',
+    problem:
+      'Users needed a reliable portal for species info, donations, and KYC. Admins needed tools for species management.',
+    solution:
+      'Created a complete user portal with species listing, donation flow, KYC verification, and admin management panels.',
+    impact:
+      'Improved donor engagement and transparency through structured species and donation tracking.',
+    tech: 'React, SASS',
+    links: [{ label: 'Web', url: 'https://5wf.org/' }],
+  },
+  {
+    title: 'MyKaizen – Cross-Platform Medical App',
+    problem:
+      'Patients and doctors needed a unified mobile app for secure consultations, prescriptions, and appointments.',
+    solution:
+      'Developed a cross-platform app with appointment scheduling, prescription wallet, video consultations, biometric login, and emergency SOS.',
+    impact:
+      'Improved patient experience and strengthened secure access through biometrics and encrypted workflows.',
+    tech: 'React Native, TypeScript, Biometrics, Android, iOS',
+    links: [{ label: 'Link', url: 'https://mykaizen.io/' }],
+  },
+  {
+    title: 'NEAR NFT Marketplace',
+    problem:
+      'Users needed a marketplace to mint, list, auction, and manage NFTs using NEAR wallet.',
+    solution:
+      'Developed a fast Next.js marketplace with NFT minting, auctions, wallet integration, and responsive Web3 UI.',
+    impact:
+      'Delivered a smooth NFT trading experience with secure wallet integration and real-time bidding flows.',
+    tech: 'Next.js, Web3.js, NEAR Wallet, Tailwind CSS',
   },
 ];
 
@@ -77,7 +121,16 @@ const Projects = () => {
             <motion.div
               whileHover={{ scale: 1.03 }}
               transition={{ type: 'spring', stiffness: 150 }}
-              className="rounded-2xl border bg-white/70 p-8 shadow-lg backdrop-blur-xl"
+              className="
+    flex 
+    h-full flex-col 
+    rounded-2xl 
+    border 
+    bg-white/70 
+    p-8 
+    shadow-lg 
+    backdrop-blur-xl
+  "
             >
               <TextComponent
                 fontSize={22}
@@ -91,7 +144,20 @@ const Projects = () => {
               >
                 {project.title}
               </TextComponent>
-
+              <div className="mt-6 flex flex-wrap gap-3">
+                {project.links &&
+                  project.links?.map((link, index) => (
+                    <a
+                      key={index}
+                      href={link.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="rounded-lg border border-blue-600 px-4 py-2 text-sm font-semibold text-blue-600 transition hover:bg-blue-600 hover:text-white"
+                    >
+                      {link.label}
+                    </a>
+                  ))}
+              </div>
               <div className="mt-4">
                 <TextComponent fontSize={18} fontWeight={600} color="#1f2937">
                   Problem
