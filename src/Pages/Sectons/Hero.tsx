@@ -75,11 +75,7 @@ const Hero = () => {
           Linkedin
         </Button>
 
-        <Button
-          href="/src/assets/Mamata_Gawand_Resume.pdf"
-          download
-          variant="outline"
-        >
+        <Button href="/Mamata_Gawand_Resume.pdf" download variant="outline">
           Resume
         </Button>
       </motion.div>
