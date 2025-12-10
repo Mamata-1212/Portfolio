@@ -68,8 +68,11 @@ const Hero = () => {
         transition={{ delay: 0.4 }}
         className="z-10 mt-8 flex space-x-4"
       >
-        <Button href="#projects" variant="primary">
-          View Projects
+        <Button
+          href="https://www.linkedin.com/in/mamata-gawand-672396214/"
+          variant="primary"
+        >
+          Linkedin
         </Button>
 
         <Button
