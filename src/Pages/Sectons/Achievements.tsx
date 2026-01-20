@@ -11,6 +11,10 @@ const stats = [
     label: 'Card Systems, KYC, Transactions, Reporting',
   },
   {
+    value: 'AI-Enhanced',
+    label: 'Certified AI Engineer leveraging GenAI for SDLC speed',
+  },
+  {
     value: 'Enterprise UI',
     label: 'Multi-Tenant & Multi-Role Architecture Delivered',
   },
@@ -24,7 +28,7 @@ const stats = [
   },
   {
     value: 'Leadership',
-    label: 'Led Frontend Modules & Mentored Junior Developers',
+    label: 'Collaborated with Founders/CTOs & Mentored Talent',
   },
 ];
 

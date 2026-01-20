@@ -1,6 +1,11 @@
 import TextComponent from '@/components/Atoms/TextComponent';
 import { motion } from 'framer-motion';
-import { FaLaptopCode, FaMobileAlt, FaUserShield } from 'react-icons/fa';
+import {
+  FaBrain,
+  FaLaptopCode,
+  FaMobileAlt,
+  FaUserShield,
+} from 'react-icons/fa';
 import { MdDashboardCustomize } from 'react-icons/md';
 
 const items = [
@@ -8,6 +13,11 @@ const items = [
     icon: <MdDashboardCustomize size={40} className="text-blue-600" />,
     title: 'Enterprise Frontend Development',
     desc: 'I design and build scalable frontend systems for multi-role portals, dashboards, and business-critical fintech applications used by customers, partners, admins, and distributors.',
+  },
+  {
+    icon: <FaBrain size={40} className="text-emerald-600" />,
+    title: 'AI Engineering & GenAI Integration',
+    desc: 'Certified AI Engineer leveraging GenAI to accelerate the SDLC, automate UI component generation, and integrate LLM-driven features into modern web applications.',
   },
   {
     icon: <FaLaptopCode size={40} className="text-purple-600" />,
@@ -44,9 +54,9 @@ const WhatIDo = () => {
         align="center"
         className="mx-auto mt-4 max-w-3xl"
       >
-        I build enterprise-grade frontend systems with scalable architecture,
-        seamless UX, and business-focused engineering — especially for fintech
-        and multi-tenant platforms.
+        I build enterprise grade frontend systems with scalable architecture,
+        seamless UX, and business-focused engineering especially for fintech and
+        multi-tenant platforms.
       </TextComponent>
 
       <div className="mt-16 grid gap-10 sm:grid-cols-2 md:grid-cols-4">

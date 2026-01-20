@@ -7,6 +7,8 @@ type ButtonProps = {
   className?: string;
   href?: string;
   download?: boolean;
+  target?: string;
+  rel?: string;
 };
 
 const baseStyles =
@@ -24,6 +26,8 @@ const Button = ({
   className = '',
   href,
   download,
+  target,
+  rel,
 }: ButtonProps) => {
   const Comp = href ? 'a' : 'button';
 
@@ -37,6 +41,8 @@ const Button = ({
       <Comp
         href={href}
         download={download}
+        target={target}
+        rel={rel}
         className={`${baseStyles} ${variants[variant]} ${className}`}
       >
         {children}

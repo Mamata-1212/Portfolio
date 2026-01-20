@@ -3,6 +3,38 @@ import { motion } from 'framer-motion';
 
 const experiences = [
   {
+    company: '',
+    role: 'Independent Software Consultant (Freelance)',
+    duration: 'Aug 2025 – Present',
+    sections: [
+      {
+        title: '🔹 AI-Augmented Engineering',
+        points: [
+          'Integrating Generative AI into the frontend development lifecycle to automate repetitive UI component generation and optimize code efficiency.',
+        ],
+      },
+      {
+        title: '🔹 Architectural Consulting',
+        points: [
+          'Partnering with diverse clients in a service-oriented capacity to design and deploy scalable, high-performance web and mobile solutions using React and React Native',
+        ],
+      },
+      {
+        title: '🔹 Security & Financial Compliance',
+        points: [
+          'Implementing enterprise-grade authentication patterns and data privacy workflows, ensuring all digital products align with strict industry standards for sensitive financial data.',
+        ],
+      },
+      {
+        title: '🔹 Advanced Performance Tuning',
+        points: [
+          'Utilizing sophisticated rendering techniques to minimize latency and ensure a seamless, fluid user experience across complex, data-heavy platforms.',
+        ],
+      },
+    ],
+  },
+
+  {
     company: 'Instant Mudra Technologies Pvt. Ltd.',
     role: 'Software Developer',
     duration: 'Oct 2024 – Aug 2025',

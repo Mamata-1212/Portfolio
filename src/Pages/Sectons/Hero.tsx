@@ -9,7 +9,6 @@ const Hero = () => {
       className="relative flex min-h-screen w-screen flex-col items-center justify-center overflow-hidden text-center"
     >
       <div className="absolute inset-0 animate-pulse bg-gradient-to-br from-blue-200 via-white to-purple-200 opacity-40" />
-
       <motion.h1
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
@@ -33,7 +32,6 @@ const Hero = () => {
           Crafting Scalable Digital Experiences
         </TextComponent>
       </motion.h1>
-
       <motion.p
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
@@ -52,16 +50,28 @@ const Hero = () => {
             Frontend Developer
           </span>{' '}
           with 3+ years of experience building high-performance, scalable web
-          and mobile applications across Fintech, Web3, and SaaS platforms. I
-          specialize in{' '}
+          and mobile applications across{' '}
           <span className="font-semibold text-blue-600">
-            React, React Native, Next.js, TypeScript, UI architecture,
-            multi-theme systems, performance optimization, and enterprise-grade
-            frontend engineering.
+            Fintech, Web3, and SaaS platforms.{' '}
           </span>
+          I specialize in{' '}
+          <span className="font-semibold text-blue-600">
+            React, React Native, Next.js,{' '}
+          </span>
+          with a deep focus on{' '}
+          <span className="font-semibold text-blue-600">
+            UI architecture, multi-tenant systems, and performance
+            optimization.{' '}
+          </span>
+          By integrating{' '}
+          <span className="font-semibold text-blue-600">
+            GenAI and AI Engineering,{' '}
+          </span>
+          I accelerate the SDLC to build intelligent, enterprise-grade frontend
+          systems that bridge the gap between robust security and seamless user
+          experiences.
         </TextComponent>
       </motion.p>
-
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -71,15 +81,21 @@ const Hero = () => {
         <Button
           href="https://www.linkedin.com/in/mamata-gawand-672396214/"
           variant="primary"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Linkedin
         </Button>
 
-        <Button href="/Mamata_Gawand_Resume.pdf" download variant="outline">
+        <Button
+          href="/Mamata_Gawand_Resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          variant="outline"
+        >
           Resume
         </Button>
       </motion.div>
-
       <motion.div
         animate={{ y: [0, -15, 0] }}
         transition={{ duration: 4, repeat: Infinity }}
@@ -87,7 +103,6 @@ const Hero = () => {
       >
         React ⚛️
       </motion.div>
-
       <motion.div
         animate={{ y: [0, 20, 0] }}
         transition={{ duration: 5, repeat: Infinity }}
@@ -95,7 +110,6 @@ const Hero = () => {
       >
         TypeScript 🌀
       </motion.div>
-
       <motion.div
         animate={{ y: [0, -15, 0] }}
         transition={{ duration: 6, repeat: Infinity }}

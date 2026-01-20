@@ -42,11 +42,18 @@ const About = () => {
           align="center"
           className="mx-auto mt-6 max-w-4xl leading-relaxed md:text-xl"
         >
-          What drives me is the challenge of turning complex workflows like
-          fintech operations, multi-role dashboards, card management, or
-          enterprise reporting into clean and intuitive experiences. I enjoy
-          simplifying the complicated and designing frontends that scale
-          effortlessly as products grow.
+          What drives me is the challenge of turning complex workflows like{' '}
+          <span className="font-semibold text-blue-600">
+            fintech operations, multi-role dashboards, card management, or
+            enterprise reporting
+          </span>{' '}
+          into clean and intuitive experiences. Recently, I have expanded this
+          mission by integrating{' '}
+          <span className="font-semibold text-blue-600">
+            GenAI and AI Engineering
+          </span>{' '}
+          into my workflow, leveraging AI to accelerate development cycles and
+          build smarter, more responsive interfaces.
         </TextComponent>
       </Reveal>
 
@@ -60,12 +67,15 @@ const About = () => {
         >
           I believe in building{' '}
           <span className="font-semibold text-blue-600">
-            future-proof UI systems
+            future proof UI systems
           </span>{' '}
-          code that is modular, maintainable, and easy for teams to extend.
-          Whether it&apos;s optimizing performance, improving design
-          consistency, or mentoring junior developers, I always focus on
-          long-term impact.
+          modular, maintainable code that scales effortlessly as products grow.
+          Whether I am{' '}
+          <span className="font-semibold text-blue-600">
+            optimizing performance, improving design consistency, or mentoring
+            junior developers,
+          </span>{' '}
+          my focus is always on creating long-term technical impact.
         </TextComponent>
       </Reveal>
 
@@ -77,10 +87,16 @@ const About = () => {
           align="center"
           className="mx-auto mt-6 max-w-4xl leading-relaxed md:text-xl"
         >
-          I work closely with founders, CTOs, product teams, and designers to
-          bridge the gap between product vision and technical execution. For me,
-          great frontend development is not just about writing code it’s about
-          elevating the entire user experience.
+          I work closely with{' '}
+          <span className="font-semibold text-blue-600">
+            Founders and CTOs,
+          </span>{' '}
+          I bridge the gap between product vision and technical execution. For
+          me, great frontend development is more than just writing code; it is
+          about{' '}
+          <span className="font-semibold text-blue-600">
+            elevating the user experience through precision and innovation.
+          </span>{' '}
         </TextComponent>
       </Reveal>
     </section>
