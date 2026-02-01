@@ -8,6 +8,7 @@ const skills = [
   'JavaScript',
   'TypeScript',
   'Redux',
+  'Framer Motion',
   'Tailwind CSS',
   'GenAI Integration',
   'Prompt Engineering',
