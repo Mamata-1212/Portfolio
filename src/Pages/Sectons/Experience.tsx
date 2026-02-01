@@ -3,32 +3,39 @@ import { motion } from 'framer-motion';
 
 const experiences = [
   {
-    company: '',
+    company: 'Self-Employed',
     role: 'Independent Software Consultant (Freelance)',
     duration: 'Aug 2025 – Present',
     sections: [
       {
+        title: '🔹 Dev Design – UI Engineering Initiative',
+        points: [
+          'Architected and deployed "Dev Design," a high-end component lab focusing on modular, theme-driven architecture with a custom "Peacock Green" brand protocol[cite: 126, 154].',
+          'Resolved critical rendering and layout synchronization issues by overriding library-level logic and optimizing Vite/Rollup chunking strategies for production.',
+        ],
+      },
+      {
         title: '🔹 AI-Augmented Engineering',
         points: [
-          'Integrating Generative AI into the frontend development lifecycle to automate repetitive UI component generation and optimize code efficiency.',
+          'Integrating Generative AI into the frontend development lifecycle to automate repetitive UI component generation and optimize code efficiency[cite: 119, 128].',
         ],
       },
       {
         title: '🔹 Architectural Consulting',
         points: [
-          'Partnering with diverse clients in a service-oriented capacity to design and deploy scalable, high-performance web and mobile solutions using React and React Native',
+          'Partnering with diverse clients in a service-oriented capacity to design and deploy scalable, high-performance web and mobile solutions using React and React Native[cite: 114, 116].',
         ],
       },
       {
         title: '🔹 Security & Financial Compliance',
         points: [
-          'Implementing enterprise-grade authentication patterns and data privacy workflows, ensuring all digital products align with strict industry standards for sensitive financial data.',
+          'Implementing enterprise-grade authentication patterns and data privacy workflows, ensuring all digital products align with strict industry standards for sensitive financial data[cite: 118, 146].',
         ],
       },
       {
         title: '🔹 Advanced Performance Tuning',
         points: [
-          'Utilizing sophisticated rendering techniques to minimize latency and ensure a seamless, fluid user experience across complex, data-heavy platforms.',
+          'Utilizing sophisticated rendering techniques to minimize latency and ensure a seamless, fluid user experience across complex, data-heavy platforms[cite: 129, 148].',
         ],
       },
     ],

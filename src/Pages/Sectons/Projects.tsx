@@ -4,6 +4,23 @@ import { motion } from 'framer-motion';
 
 const projects = [
   {
+    title: 'Dev Design – AI-Driven UI Engineering Lab',
+    problem:
+      'Developers often struggle to maintain a consistent "Visual Axis" and vertical alignment in complex UI systems, especially when scaling components for a global, multi-language audience.',
+    solution:
+      'Architected a high-end component library and "Command Center" featuring a modular Peacock Green theme. Engineered custom layout logic to ensure perfect text alignment in inputs, built a synchronized i18n system for 4 languages, and implemented advanced Vite/Rollup chunking strategies to optimize production bundle sizes.',
+    impact:
+      'Reduced initial load times by splitting large vendor libraries and created a blueprint for high-performance, accessible, and theme-driven enterprise platforms.',
+    additional:
+      'Implemented Linux-compatible build scripts (shx) for cross-platform CI/CD, integrated Framer Motion for micro-interactions, and optimized Mantine internal layout logic using custom Tailwind overrides.',
+    tech: 'React, TypeScript, Mantine, Tailwind CSS, Framer Motion, i18n, Vite',
+    links: [
+      { label: 'Live', url: 'https://devdesign12.netlify.app/' },
+      { label: 'YouTube', url: 'YOUR_YOUTUBE_LINK_HERE' },
+      { label: 'GitHub', url: 'YOUR_GITHUB_LINK_HERE' },
+    ],
+  },
+  {
     title: 'Prepaid Card Platform',
     problem:
       'Users, admins, distributors, and corporate partners needed a unified and secure platform to manage prepaid cards, KYC, transactions, funding, and operational workflows across multiple roles.',
